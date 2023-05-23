@@ -1,21 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Limpiar Efectos que vienen por default */
+a{
+    text-decoration:none;
+    color:black;
+}
+ul{
+    list-style-type: none;
+
+}
+img{
+    width: 25%;
+}
+/* Estilando los contenedores principales */
 header{
-
-background-color: aqua;
-
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
 }
 
 .hero{
-
     background-color: aquamarine;
+    display: flex;
 }
 
-.sectionDos{
+.seccionDos{
     background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
 }
 .ourVision{
     background-color: coral;
+    display: flex;
 }
 
 .pasos{
     background-color: darkolivegreen;
+
+}
+.chose{
+
+background-color: darkgoldenrod;
+}
+
+/* subcontenedores de los principales */
+.seccionDos .contenedorCards{
+    display: flex;
+    
+}
+.pasos .contenedorPasos{
+    display:flex;
+}
+
+
+/* Seccion para las clases */
+.alineardeaDos{
+    display: flex;
+}
+.contenedordeCuatro{
+    display: flex;
 }

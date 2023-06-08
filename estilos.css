@@ -15,18 +15,179 @@ ul{
 
 }
 img{
-    width: 25%;
+    /* width: 25%; */
 }
 /* Estilando los contenedores principales */
 header{
     display: flex;
     justify-content: space-evenly;
-    background-color: aqua;
+    align-items: center;
+
+
 }
 
-.hero{
-    background-color: aquamarine;
+header .tituloLogo{
     display: flex;
+    align-items: center;
+    
+}
+
+header .tituloLogo p{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+header img{
+width: 60px;
+}
+
+
+
+header nav a{
+    margin-right: 2.5rem;
+
+}
+
+header nav .flecha{
+    font-size: 10px;
+
+}
+
+header button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #3952B6;
+    background: #3952B6;
+  }
+
+
+  header button:hover {
+    background: #fff;
+    color: #3952B6
+  }
+
+
+  
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    padding: 20px 60px;
+}
+.ContHeroTxt{
+    width: 50%;
+}
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.barraSearch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 80%;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 20px 10px;
+
+}
+
+.barraSearch input {
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+}
+
+.barraSearch button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    min-width: 130px;
+    color: #fff;
+    padding: 5px 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 2px solid #3952B6;
+    background: #3952B6;
+}
+
+.hero .contenedorNumeros {
+    display: flex;
+}
+
+.hero .contenedorNumeros h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 6.5rem;
+}
+
+.ContHeroImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    border-radius: 20px;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+/* MEDIAS QUERY */
+@media (max-width: 768px) {
+    .hero img {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barraSearch {
+        width: 80%;
+    }
+
+    .barraSearch input[type="text"],
+    .barraSearch button {
+        width: 100%;
+    }
+
+    .hero .contenedorNumeros {
+        flex-wrap: wrap;
+    }
+
+    .hero .contenedorNumeros div {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .hero .contenedorNumeros h2 {
+        margin-right: 0;
+    }
 }
 
 .seccionDos{

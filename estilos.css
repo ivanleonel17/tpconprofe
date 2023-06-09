@@ -20,8 +20,9 @@ img{
 /* Estilando los contenedores principales */
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 20px 40px;
 
 
 }
@@ -80,7 +81,7 @@ header button {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 2rem;
     padding: 20px 60px;
 }
@@ -102,10 +103,10 @@ header button {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    width: 80%;
+    width: 90%;
     background-color: lightgray;
     border-radius: 30px;
-    padding: 20px 10px;
+    padding: 10px 10px;
 
 }
 
@@ -123,7 +124,7 @@ header button {
     cursor: pointer;
     min-width: 130px;
     color: #fff;
-    padding: 5px 8px;
+    padding: 15px 25px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -190,11 +191,127 @@ header button {
     }
 }
 
-.seccionDos{
-    background-color: cadetblue;
+
+.seccionDos {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
+
+.seccionDos .alineardeaDos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccionDos .alineardeaDos h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.seccionDos .alineardeaDos p {
+    font-size: 1.2rem;
+}
+
+.seccionDos .contenedordeCuatro {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.seccionDos .carta {
+    width: calc(25% - 1rem);
+    margin-bottom: 2rem;
+}
+
+.seccionDos .card-content {
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.seccionDos .card-content p {
+  position: absolute;
+  top: 7%;
+  left: 15%;
+  z-index: 2;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.seccionDos .img-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.seccionDos .img-wrapper img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 10/9; /* Relación de aspecto de la imagen */
+    border-radius: 10px;
+  }
+  
+  
+
+
+.seccionDos .label-wrapper {
+    padding: 1rem;
+    color: black;
+    text-align: left
+}
+
+.seccionDos .label-wrapper h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.seccionDos .label-wrapper h3{
+    font-size: 1rem;
+    color: gray;
+}
+
+.seccionDos .label-wrapper .ubi{
+    color: black;
+}
+
+.alineardeaDos button {
+    min-width: 130px;
+    height: 40px;
+    color: grey;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #adb5bd;
+    background-color: transparent;
+  }
+  .alineardeaDos button:hover {
+    background: gray;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    .seccionDos .contenedordeCuatro {
+      flex-direction: column; /* Cambia la dirección de flex a columna */
+      align-items: center;
+      margin-top: 2rem;
+    }
+  
+    .seccionDos .contenedordeCuatro .carta {
+      width: 80%; /* Ocupa el 100% del ancho disponible */
+    }
+  }
+  
 .ourVision{
     background-color: coral;
     display: flex;
@@ -211,19 +328,14 @@ display: flex;
 }
 
 /* subcontenedores de los principales */
-.seccionDos .contenedorCards{
-    display: flex;
-    
-}
+
 .pasos .contenedorPasos{
     display:flex;
 }
 
 
 /* Seccion para las clases */
-.alineardeaDos{
-    display: flex;
-}
+
 .contenedordeCuatro{
     display: flex;
 }

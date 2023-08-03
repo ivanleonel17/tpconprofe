@@ -312,11 +312,49 @@ header button {
     }
   }
   
-.ourVision{
-    background-color: coral;
+/* Estilos para el contenedor principal */
+.ourVision {
     display: flex;
-}
-
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación del contenido al inicio */
+    width: 100%;
+    padding: 20px; /* Espacio en el borde del section */
+    margin-top: 20px; /* Espacio en la parte superior del section */
+    margin-bottom: 20px; /* Espacio en la parte inferior del section */
+    margin: 0 auto;
+  }
+  
+  .ourVision h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .ourVision p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: gray;
+  }
+  
+  /* Estilos para cada div dentro del contenedor principal */
+  .cartaVision,
+  .cartaMision {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos adicionales para las imágenes dentro de los divs */
+  .cartaVision img,
+  .cartaMision img {
+    width: 70%; /* Ancho de la imagen */
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados */
+    margin-top: 15px; /* Espacio entre el título y la imagen */
+    margin-bottom: 15px; /* Espacio entre la imagen y el párrafo */
+  }
+  
+  
 .pasos{
     background-color: darkolivegreen;
 

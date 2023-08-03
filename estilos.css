@@ -5,6 +5,11 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* Limpiar Efectos que vienen por default */
 a{
     text-decoration:none;
@@ -313,15 +318,17 @@ header button {
   }
   
 /* Estilos para el contenedor principal */
-.ourVision {
+
+
+
+.ourVision  {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Alineación del contenido al inicio */
     width: 100%;
-    padding: 20px; /* Espacio en el borde del section */
     margin-top: 20px; /* Espacio en la parte superior del section */
     margin-bottom: 20px; /* Espacio en la parte inferior del section */
-    margin: 0 auto;
+    
   }
   
   .ourVision h2 {
@@ -329,9 +336,11 @@ header button {
     font-weight: bold;
     margin-bottom: 10px;
   }
+
+
   .ourVision p {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     color: gray;
   }
@@ -342,12 +351,13 @@ header button {
     flex-basis: 50%;
     padding: 10px;
     box-sizing: border-box;
+
   }
   
   /* Estilos adicionales para las imágenes dentro de los divs */
   .cartaVision img,
   .cartaMision img {
-    width: 70%; /* Ancho de la imagen */
+    width: 75%; /* Ancho de la imagen */
     height: auto;
     border-radius: 20px; /* Bordes redondeados */
     margin-top: 15px; /* Espacio entre el título y la imagen */
